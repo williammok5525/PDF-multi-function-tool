@@ -106,12 +106,24 @@ class PDFToolMainWindow(QMainWindow):
         lang_menu.addAction(en_action)
     
     def switch_language(self, lang: str):
-        """切换语言"""
+        """切換語言"""
         self.lang.set_language(lang)
-        # 重新初始化UI
-        self.close()
-        self.__init__()
-        self.show()
+    
+        # 保存當前選項卡索引
+        current_index = self.tab_widget.currentIndex()
+    
+        # 清除並重新創建所有選項卡
+        self.tab_widget.clear()
+        self.create_basic_tab()
+        self.create_convert_tab()
+        self.create_content_tab()
+    
+        # 恢復選項卡索引
+        self.tab_widget.setCurrentIndex(current_index)
+    
+        # 更新狀態欄和標題
+        self.statusBar().showMessage('Ready' if lang == 'en' else '就绪')
+        self.setWindowTitle(self.lang.get_text('app_title'))
     
     # ==================== 基础操作标签页 ====================
     

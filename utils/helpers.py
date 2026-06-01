@@ -11,7 +11,7 @@ class Language:
         'zh': {
             # 主窗口
             'app_title': 'PDF多功能处理工具',
-            'language': '语言',
+            'language': 'Language',
             
             # 标签页
             'tab_basic': '基础操作',
