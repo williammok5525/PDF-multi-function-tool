@@ -2,7 +2,7 @@ PDF multi-function tool
 
 功能/Function:
 
-            # 基础操作/Basic Operations
+            #Basic Operations/基础操作
             'merge_pdf': '合并PDF',
             'split_pdf': '拆分PDF',
             'rotate_pdf': '旋转页面',
@@ -12,7 +12,7 @@ PDF multi-function tool
             'decrypt_pdf': '解密PDF',
             'add_watermark': '添加水印',
             
-            # 格式转换/Format Conversion
+            # Format Conversion/格式转换
             'pdf_to_image': 'PDF转图片',
             'image_to_pdf': '图片转PDF',
             'pdf_to_word': 'PDF转Word',
@@ -22,7 +22,7 @@ PDF multi-function tool
             'excel_to_pdf': 'Excel转PDF',
             'text_to_pdf': '文本转PDF',
             
-            # 内容处理/Content Processing
+            # Content Processing/内容处理
             'extract_text': '提取文本',
             'extract_images': '提取图片',
             'extract_tables': '提取表格',
